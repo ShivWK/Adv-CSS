@@ -1,0 +1,22 @@
+{
+  "name": "adv-css",
+  "version": "1.0.0",
+  "description": "Learn advanced CSS with SASS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivWK/Adv-CSS.git"
+  },
+  "author": "Shivendra Dwivedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShivWK/Adv-CSS/issues"
+  },
+  "homepage": "https://github.com/ShivWK/Adv-CSS#readme",
+  "devDependencies": {
+    "sass": "^1.97.2"
+  }
+}
