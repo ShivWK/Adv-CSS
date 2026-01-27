@@ -1,3 +1,6 @@
+@use "../abstracts" as vars;
+@use "../base" as base;
+
 .btn {
     &:link,
     &:visited {
@@ -12,20 +15,20 @@
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-primary-shadow, 0.2);
+        box-shadow: 0 1rem 2rem rgba(vars.$color-primary-shadow, 0.2);
     }
 
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-primary-shadow, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(vars.$color-primary-shadow, 0.2);
     }
 
     &--white {
-        background-color: $color-primary-background;
-        color: $color-secondary-text;
+        background-color: vars.$color-primary-background;
+        color: vars.$color-secondary-text;
 
         &::after {
-            background-color: $color-primary-background;
+            background-color: vars.$color-primary-background;
         }
 
         &:hover::after {

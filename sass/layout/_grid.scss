@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as vars;
+
+.grid-test {
+    margin-top: 3rem;
+
+    & .row {
+        max-width: vars.$grid-width;
+        margin: 0 auto;
+        border: 2px solid blueviolet;
+
+        &:not(:last-child) {
+            margin-bottom: vars.$gutter-vertical;
+        }
+    }
+}

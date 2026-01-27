@@ -52,11 +52,11 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn--white {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #777;
 }
 .btn--white::after {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .btn--white:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -100,6 +100,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.grid-test {
+  margin-top: 3rem;
+}
+.grid-test .row {
+  max-width: 114rem;
+  margin: 0 auto;
+  border: 2px solid blueviolet;
+}
+.grid-test .row:not(:last-child) {
+  margin-bottom: 4rem;
 }
 
 *,

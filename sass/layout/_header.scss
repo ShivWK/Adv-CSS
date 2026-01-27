@@ -1,8 +1,10 @@
+@use "../abstracts" as abs;
+
 .header {
     height: 96vh;
     background-image: linear-gradient(to right bottom,
-            $color-light-green,
-            $color-dark-green),
+            abs.$color-light-green,
+            abs.$color-dark-green),
         url("./assets/hero.jpg");
     background-size: cover;
     background-position: center;
