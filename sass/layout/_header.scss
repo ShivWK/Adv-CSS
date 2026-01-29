@@ -8,6 +8,7 @@
         url("./assets/images/hero.jpg");
     background-size: cover;
     background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
     position: relative;
 
