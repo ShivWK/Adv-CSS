@@ -4,12 +4,12 @@
     perspective: 100rem;
     -moz-perspective: 100rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
+    transform-style: preserve-3d;
 
     &__side {
-        height: 50rem;
-        transition: all .9s ease;
-        transform-style: preserve-3d;
+        height: 100%;
+        transition: transform .9s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -19,11 +19,10 @@
         box-shadow: 0 1.5rem 4rem rgba(abs.$color-primary-shadow, .15);
 
         &--front {
-            background-color: abs.$color-primary-background;
+            background-color: white;
         }
 
         &--back {
-            background-color: blueviolet;
             transform: rotateY(180deg);
 
             &-1 {
@@ -31,11 +30,11 @@
             }
 
             &-2 {
-                background-image: linear-gradient();
+                background-image: linear-gradient(to right bottom, abs.$color-light-green, abs.$color-dark-green);
             }
 
             &-3 {
-                background-image: linear-gradient();
+                background-image: linear-gradient(to right bottom, abs.$color-tertiary-light, abs.$color-tertiary-dark);
             }
         }
     }
@@ -48,7 +47,6 @@
         transform: rotateY(0deg);
     }
 
-    // front side style
     &__picture {
         background-size: cover;
         background-position: center;
@@ -56,17 +54,93 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, abs.$color-secondary-light, abs.$color-secondary-dark), url("./assets/images/nat-5.jpg");
         }
 
         &--2 {
-            background-image: url("./assets/images/nat-5.jpg");
+            background-image: linear-gradient(to right bottom, abs.$color-light-green, abs.$color-dark-green), url("./assets/images/nat-6.jpg");
         }
 
         &--3 {
-            background-image: url("./assets/images/nat-5.jpg");
+            background-image: linear-gradient(to right bottom, abs.$color-tertiary-light, abs.$color-tertiary-dark) ,url("./assets/images/nat-7.jpg");
         }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: abs.$color-primary-text;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 60%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right, rgba(abs.$color-secondary-light, .85), rgba(abs.$color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right, rgba(abs.$color-light-green, .85), rgba(abs.$color-dark-green, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right, rgba(abs.$color-tertiary-light, .85), rgba(abs.$color-tertiary-dark, .85));
+        }
+    }
+
+    &__details {
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 2rem auto 0;
+
+            li {
+                text-align: center;
+                padding: 1rem;
+                font-size: 1.5rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid abs.$color-gray-light-2;
+                }
+            }
+        }
+    }
+
+    // back side style
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: abs.$color-primary-text;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        text-transform: uppercase;
+        font-size: 1.4rem
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 200;
     }
 }

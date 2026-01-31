@@ -31,10 +31,14 @@
         &::after {
             background-color: abs.$color-primary-background;
         }
+    }
 
-        &:hover::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
+    &--green {
+        background-color: abs.$color-light-green;
+        color: abs.$color-primary-text;
+
+        &::after {
+            background-color: abs.$color-light-green;
         }
     }
 
@@ -53,6 +57,11 @@
         width: 100%;
         border-radius: 10rem;
         transition: all 0.4s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
     }
 }
 
