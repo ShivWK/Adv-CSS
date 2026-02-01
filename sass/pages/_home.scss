@@ -24,6 +24,13 @@
 
 .section-tours {
     background-color: abs.$color-gray-light-1;
-    padding: 25rem 0;
+    padding: 25rem 0 10rem;
     margin-top: -15vh;
+}
+
+.section-stories {
+    // border: 2px solid black;
+    padding: 10rem 0;
+    background-color: rgba($color: #ffffff, $alpha: .7);
+    position: relative;
 }
