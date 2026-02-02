@@ -113,11 +113,11 @@
   background-color: #fff;
 }
 .btn--green {
-  background-color: rgba(71, 221, 45, 0.8);
+  background-color: rgb(34, 196, 6);
   color: #ffffff;
 }
 .btn--green::after {
-  background-color: rgba(71, 221, 45, 0.8);
+  background-color: rgb(34, 196, 6);
 }
 .btn--animate {
   animation: moveInFromBottom 1s ease-out;
@@ -141,15 +141,15 @@
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: rgba(71, 221, 45, 0.8);
+  color: rgb(34, 196, 6);
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid rgb(71, 221, 45);
+  border-bottom: 1px solid rgb(34, 196, 6);
   padding: 0.3rem 0.6rem;
   transition: all 0.2s;
 }
 .btn-text:hover {
-  background-color: rgb(71, 221, 45);
+  background-color: rgb(34, 196, 6);
   color: white;
   border-radius: 5%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -169,8 +169,9 @@
   border-radius: 2px;
   position: absolute;
   z-index: 10;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   outline-offset: 0;
+  backface-visibility: hidden;
 }
 .composition__photo--p1 {
   left: 0;
@@ -185,7 +186,7 @@
   top: 10rem;
 }
 .composition__photo:hover {
-  outline: 1.5rem solid rgb(71, 221, 45);
+  outline: 1.5rem solid rgb(34, 196, 6);
   outline-offset: 2rem;
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -338,7 +339,7 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 6rem;
   padding-left: 9rem;
   border-radius: 3px;
@@ -495,6 +496,19 @@
   padding: 10rem 0;
   background-color: rgba(255, 255, 255, 0.7);
   position: relative;
+}
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right, rgba(71, 221, 45, 0.8), rgba(32, 146, 106, 0.6));
+}
+
+.book {
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("./assets/images/nat-10.jpg");
+  background-size: 100%;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
 }
 
 *,

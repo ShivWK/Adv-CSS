@@ -34,11 +34,11 @@
     }
 
     &--green {
-        background-color: abs.$color-light-green;
+        background-color: abs.$color-light-green-text;
         color: abs.$color-primary-text;
 
         &::after {
-            background-color: abs.$color-light-green;
+            background-color: abs.$color-light-green-text;
         }
     }
 
@@ -70,7 +70,7 @@
     &:link,
     &:visited {
         font-size: abs.$default-font-size;
-        color: abs.$color-light-green;
+        color: abs.$color-light-green-text;
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid abs.$color-light-green-text;

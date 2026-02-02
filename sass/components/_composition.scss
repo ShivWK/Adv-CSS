@@ -9,8 +9,9 @@
         border-radius: 2px;
         position: absolute;
         z-index: 10;
-        transition: all .2s ease;
+        transition: all .25s ease;
         outline-offset: 0;
+        backface-visibility: hidden;
 
         &--p1 {
             left: 0;
