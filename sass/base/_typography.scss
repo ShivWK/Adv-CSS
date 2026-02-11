@@ -10,6 +10,7 @@
     background-image: linear-gradient(to right, abs.$color-light-green, abs.$color-dark-green);
     -webkit-background-clip: text;
     transition: all .2s;
+    user-select: none;
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -23,6 +24,7 @@
     text-transform: uppercase;
     font-size: abs.$default-font-size;
     z-index: 20;
+    user-select: none;
 }
 
 .paragraph {
